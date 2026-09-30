@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Interview Assistant</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🤖 AI Interview Assistant</h1>
+
+        <p class="subtitle">
+            Practice your interview with AI
+        </p>
+
+        <!-- Start Interview -->
+        <div class="card" id="start-section">
+
+            <h2>Select Job Role</h2>
+
+            <select id="role">
+                <option value="">-- Select Role --</option>
+                <option value="Data Analyst">Data Analyst</option>
+                <option value="Python Developer">Python Developer</option>
+                <option value="AIML Engineer">AIML Engineer</option>
+                <option value="Django Developer">Django Developer</option>
+                <option value="Software Developer">Software Developer</option>
+            </select>
+
+            <button type="button" onclick="startInterview()">
+                Start Interview
+            </button>
+
+        </div>
+
+
+        <!-- Interview -->
+        <div class="card hidden" id="interview-section">
+
+            <div class="role-display">
+                Role: <span id="selected-role"></span>
+            </div>
+
+            <h2>Interview Question</h2>
+
+            <p id="question"></p>
+
+            <label for="answer">Your Answer</label>
+
+            <textarea
+                id="answer"
+                rows="8"
+                placeholder="Type your answer here..."
+            ></textarea>
+
+            <button type="button" onclick="submitAnswer()">
+                Submit Answer
+            </button>
+
+        </div>
+
+
+        <!-- Feedback -->
+        <div class="card hidden" id="feedback-section">
+
+            <h2>🤖 AI Feedback</h2>
+
+            <div class="score">
+                Score: <span id="score">-</span>/10
+            </div>
+
+            <p id="feedback"></p>
+
+            <button type="button" onclick="nextQuestion()">
+                Next Question →
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>

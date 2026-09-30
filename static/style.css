@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.container {
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 36px;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    margin-bottom: 20px;
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background: #222;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.role-display {
+    text-align: left;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#question {
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    min-height: 160px;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    resize: vertical;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px;
+    background: white;
+    color: black;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #222;
+}
+
+.score {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#feedback {
+    text-align: left;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+}
